@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="625.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label contentDisplay="CENTER" layoutX="200.0" layoutY="-16.0" prefHeight="87.0" prefWidth="276.0" text="InetCorp" textAlignment="CENTER" textFill="#eda105">
+            <font>
+                <Font name="Chiller" size="80.0" />
+            </font>
+        </Label>
+      <TableView fx:id="tariffInPut" layoutY="92.0" prefHeight="309.0" prefWidth="626.0">
+        <columns>
+          <TableColumn fx:id="tariffName" prefWidth="149.5999755859375" text="Наименование" />
+          <TableColumn fx:id="tariffPrice" prefWidth="90.4000244140625" text="Цена" />
+            <TableColumn fx:id="tariffID" prefWidth="61.5999755859375" text="Код" />
+            <TableColumn fx:id="tariffSale" prefWidth="72.79998779296875" text="Скидка %" />
+            <TableColumn fx:id="tariffInfo" prefWidth="248.79995727539062" text="Описание тарифа" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
